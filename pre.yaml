@@ -1,0 +1,19 @@
+- name: print the values
+  hosts: local
+  connection: local
+  vars:
+    course: deveops aws
+    duration: 20days
+    tools:
+     - java
+     - connection
+     - .net
+    modules:
+     ci: cd
+     devops: jenkins
+  tasks:
+    - name: print the variables
+      ansible.builtin.debug:
+      msg: Hello everyone welcome to my  {{ course }} with the   {{ duration }} offering {{ tools }} and the {{ modules }}
+
+     
