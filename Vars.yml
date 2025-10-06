@@ -1,5 +1,6 @@
 - name: variables
-  hosts: web
+  hosts: local
+  connection: local
   vars:
     COURSE: "DEVOPS"
     DURATION: 120HRS
