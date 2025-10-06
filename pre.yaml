@@ -4,16 +4,16 @@
   vars:
     course: deveops aws
     duration: 20days
-    tools:
+    tools: #list
      - java
      - connection
      - .net
-    modules:
+    modules: #map
      ci: cd
      devops: jenkins
   tasks:
-    - name: print the variables
-      ansible.builtin.debug:
-      msg: Hello everyone welcome to my  {{ course }} with the   {{ duration }} offering {{ tools }} and the {{ modules }}
+  - name: print the variables
+    ansible.builtin.debug:
+    msg: Hello everyone welcome to my  {{ course }} with the   {{ duration }} offering {{ tools }} and the {{ modules }}
 
      
