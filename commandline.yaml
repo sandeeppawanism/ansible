@@ -1,0 +1,9 @@
+- name: print the values
+  hosts: local
+  connection: local
+  tasks:
+    - name: print the variables
+      ansible.builtin.debug:
+      msg: Hello everyone welcome to my  {{ project }} to the  {{ series }}
+
+     
