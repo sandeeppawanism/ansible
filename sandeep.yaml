@@ -1,10 +1,10 @@
 - name: sandeepinc
-  hosts: local
+  hosts: web
   vars_files:
   - var.yaml
   tasks:
   - name: print the values
     ansible.builtin.debug:
-      msg: we are having {{ DEVOPS }} course with the {{ DURATION}} Trainer is {{ TRAINER }}
+      msg: we are having {{ COURSE }} course with the {{ DURATION}} Trainer is {{ TRAINER }}
      
 
