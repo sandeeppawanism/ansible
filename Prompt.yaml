@@ -1,0 +1,17 @@
+- name: Prompt level
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: COURSE
+    prompt: please enter the prompt
+    private: false
+  - name: DURATION
+    prompt: please enter the duration
+    private: false
+  - name: TRAINER
+    prompt: please enter the trainer
+    private: false
+  tasks:
+  - name: print the details
+    ansible.builtin.debug:
+      msg: This {{ COURSE }} which is having the {{ DURATION }} trainer is Trainer {{ TRAINER }}
