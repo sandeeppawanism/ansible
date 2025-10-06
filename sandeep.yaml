@@ -1,5 +1,7 @@
 - name: sandeepinc
   hosts: web
+  vars_files:
+  - var.yaml
   tasks:
   - name: print the values
     ansible.builtin.debug:
