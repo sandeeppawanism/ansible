@@ -1,0 +1,8 @@
+- name: sandeepinc
+  hosts: web
+  tasks:
+  - name: print the values
+    ansible.builtin.debug:
+      msg: we are having {{ DEVOPS }} course with the {{ DURATION}} Trainer is {{ TRAINER }}
+     
+
