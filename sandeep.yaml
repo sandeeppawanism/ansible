@@ -1,5 +1,6 @@
 - name: sandeepinc
-  hosts: web
+  hosts: local
+  connection: local
   vars_files:
   - var.yaml
   tasks:
