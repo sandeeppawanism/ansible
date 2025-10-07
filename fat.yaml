@@ -1,0 +1,9 @@
+- name: Install nginx
+  hosts: local
+  connection: local
+  tasks:
+  - name: install nginx if RHEL
+    ansible.builtin.dnf:
+      name: nginx   
+      state: installed
+      when: ansible_os_family == "RedHat"
