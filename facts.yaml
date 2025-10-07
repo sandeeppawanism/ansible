@@ -1,6 +1,7 @@
 ---
 - name: Facts and variables
-  hosts: web
+  hosts: local
+  connection: local
   tasks:
   - name: print the Facts
     ansible.builtin.debug: 
