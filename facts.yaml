@@ -1,7 +1,7 @@
+---
 - name: Facts and variables
   hosts: web
   tasks:
-  - name: print the Facts
-    ansible.builtin.debug:
-    msg: "{{ ansible_facts }}"
-
+    - name: print the Facts
+      ansible.builtin.debug: null
+      msg: "{{ ansible_facts }}"
