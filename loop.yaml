@@ -1,5 +1,5 @@
 - name: Print Loops
-  hosts: web
+  hosts: local
   become: yes
   tasks:
   - name: install packages
